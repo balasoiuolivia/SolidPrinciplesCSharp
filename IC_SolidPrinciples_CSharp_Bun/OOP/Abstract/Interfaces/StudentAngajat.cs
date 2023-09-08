@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace IC_SolidPrinciples_CSharp_Bun.OOP.Abstract.Interfaces
+{
+    internal class StudentAngajat : Persoana, IAngajat, IStudent
+    {
+        public StudentAngajat(string Nume, string Prenume, int Varsta, string Meseria) : base(Nume, Prenume, Varsta, Meseria)
+        {
+        }
+
+        public void DetaliiAngajat()
+        {
+            Console.WriteLine("Lucreaza QA automation -  big paycheck");
+        }
+
+        public void Munceste()
+        {
+            Console.WriteLine("Lucreaza QA automation C#");
+        }
+
+        public void DetaliiStudent()
+        {
+            Console.WriteLine("Lucreaza QA automation - internship");
+        }
+
+        public void Invata()
+        {
+            Console.WriteLine("Invata QA automation C#");
+        }
+    }
+}
